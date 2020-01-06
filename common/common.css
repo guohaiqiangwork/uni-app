@@ -1,0 +1,274 @@
+	/*每个页面公共css */
+	@font-face {
+	    font-family: 'SourceHanSans';
+	    src: url('common/SourceHanSans-Normal.otf');
+		font-weight: normal;  
+		font-style: normal; 
+	} 
+	body,page{ 
+		font-size: 28upx;
+		background: #fafafa;
+		font-family: PingFangSC-Regular,sans-serif,SourceHanSans;
+	}
+	uni-input{
+	    display: block;
+	    font-size: 16px;
+	    line-height: 80upx;
+	    height: 80upx;
+	    min-height:  80upx;
+	    overflow: hidden;
+	}
+	image{
+		will-change: transform
+	}
+	.page{
+		padding-top: 128upx;/* tabar页自定义头部 父元素需固定头部高度 */
+	} 
+	.font-color{
+		color: #121826;
+		font-weight: 700
+	}
+	.font-color2{
+		color: #FF6740 !important;
+	}
+	.font-color3{
+		color: #ee9938;
+	}
+	.font-color4{
+		color: #32333A;
+	}
+	.header{
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 999;
+	}
+	.h_top{
+		height:40upx;
+		width: 100%;
+		background: #fafafa;
+	}
+	.h_main{
+		height:90upx;
+		line-height: 90upx;
+		width: 100%;
+		background: #fafafa;
+		text-align: center;
+		color: #3A3B41;
+		font-size: 34upx;
+		position: relative;
+		
+	}
+
+	.orangeD{
+		font-size: 25upx;
+		position: absolute;
+		/* right:30upx; */
+		top: -10%;
+		color: #ff6740;
+	}
+	.fixed_btm{
+		height: 80upx;
+		margin-top: 15upx;
+		margin-left: 5%;
+		background: linear-gradient(left,#121826,#121826);
+		border-radius: 50upx;
+		text-align: center;
+		line-height: 80upx;
+		color: #FFFFFF; 
+		width: 90%;
+	}
+		.L_form{
+		margin: 40upx 40upx 0 40upx;
+		position: relative;
+		display: flex;
+		border-bottom: 1px solid #eee;
+	}
+	.L_icon{
+		width: 10%;
+		font-weight: 400 !important;
+		font-size: 40upx;
+		height: 80upx;
+		line-height: 80upx;
+		color: #161C26;
+		margin: 0 !important;
+		padding-left:10upx;
+	} 
+	.L_input{
+		width: 90%;
+		/* height: 80upx; */
+		/* line-height: 40upx; */
+		height: 40upx;
+		margin-top: 20upx;
+	}
+	.placeholder-class{ 
+		color: #eee;
+	}
+	.forgetpwd{
+		width: 25%;
+		font-size: 28upx;
+		/* height: 90upx;*/
+		line-height: 90upx; 
+		color: #EFB400;
+	}
+	.forgetpwd2{
+		width: 25%;
+		font-size: 28upx;
+		/* height: 90upx;*/
+		line-height: 90upx; 
+		color: #ccc;
+	}
+	.policyAgree{
+		margin-left: 50upx;
+		color: #ccc;
+		font-size: 28upx;
+	}
+	.policyAgree2{
+		color: #131926;
+		font-size: 28upx;
+	}
+	.noregister{
+		color: #ccc;
+		font-size: 28upx;
+	}
+	.noregister2{
+		color: #F1B500;
+		font-size: 28upx;
+	}
+	.logo{
+		margin: 20% 0 ;
+		display: flex;
+		align-items: center; /*定义body的元素垂直居中*/
+		justify-content: center; /*定义body的里的元素水平居中*/
+	}
+	.mar_bt{
+		margin-bottom: 20upx;
+	}
+	/* 列表 */
+	.uni-list {
+		background-color: #FFFFFF;
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.uni-list:after { 
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 1px;
+		content: '';
+		-webkit-transform: scaleY(.5);
+		transform: scaleY(.5);
+		background-color: #c8c7cc;
+	}
+	.uni-list::before {
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		top: 0;
+		left: 0;
+		height: 1px;
+		content: '';
+		-webkit-transform: scaleY(.5);
+		transform: scaleY(.5);
+		background-color: #c8c7cc;
+	}
+	.uni-list-cell {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.uni-list-cell-hover {
+		background-color: #eee;
+	}
+	.uni-list-cell-pd {
+		padding: 22upx 30upx;
+	}
+	.uni-list-cell-left {
+		font-size:28upx;
+		padding: 0 30upx;
+	}
+	.uni-list-cell-db,
+	.uni-list-cell-right {
+		flex: 1;
+	}
+	.uni-list-cell::after {
+		position: absolute;
+	  z-index: 3;
+		right: 0;
+		bottom: 0;
+		left: 30upx;
+		height: 1px;
+		content: '';
+		-webkit-transform: scaleY(.5);
+		transform: scaleY(.5);
+		background-color: #c8c7cc;
+	}
+	.uni-list .uni-list-cell:last-child::after {
+		height: 0upx;
+	}
+	.uni-list-cell-last.uni-list-cell::after {
+		height: 0upx;
+	}
+	/* ali字体图标库 to LOONG BABA */
+    @font-face {
+        font-family: 'iconfont';
+        src: url('https://at.alicdn.com/t/font_1264815_w2ft9reag7j.ttf') format('truetype');
+    } 
+    .icons {
+        font-family: iconfont !important;
+        margin-left: 36upx;
+		/* font-weight: 700; */
+    }
+	.icons_h_right{
+		font-size: 36upx;
+		position: absolute;
+		left: 0upx;
+		top: 5%;
+	}	
+	.icons_h_left{
+		font-size: 40upx;
+		position: absolute;
+		right: 45upx;
+		top: 5%;
+	}
+	.icon-BSB:before {
+	  color: #ed7b02;
+	}
+	.icon-otherbank:before {
+	  color: #f5a623;
+	}
+	
+	.icon-H3CB:before {
+	 color: #cf000f;
+	}
+	.icon-ABC:before {
+	 color: #009c96;
+	}
+	.icon-BOC:before {
+	  color: #af2434;
+	}
+	.icon-qitabank:before {
+	  color: #f5a623;
+	}
+	.icon-ICBC:before {
+	  color: #c42b25;
+	}
+	.icon-CCB:before {
+	  color: #004f9c;
+	}
+	.icon-COMM:before {
+	 color:#00367a;
+	}
+	.icon-PSBC:before {
+	  color: #007e3e;
+	}
+	.icon-CMB:before {
+	  color: #e50012;
+	}
+	
